@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 150%;
+  color: #151515;
+}
+
+input:not([type='checkbox']):not([type='radio']),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input,
+textarea {
+  &::placeholder {
+    color: #b2b8c0;
+  }
+}

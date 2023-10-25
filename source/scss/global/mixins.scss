@@ -1,0 +1,15 @@
+@mixin font-face($name, $filename, $weight, $joinName: $name, $style: normal) {
+  @font-face {
+    font-family: $name;
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+    src: url('../fonts/' + $filename + '.woff2') format('woff2'), url('../fonts/' + $filename + '.woff') format('woff');
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
